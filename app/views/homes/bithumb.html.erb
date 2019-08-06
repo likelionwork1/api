@@ -1,0 +1,11 @@
+<% if @currency.downcase != 'all' %>
+    <hr>
+    코인종류: <%= @currency %> <br>
+    현재가: <%= @data["data"]["sell_price"] %> 원 <br>
+    <hr>
+    시가: <%= @data["data"]["opening_price"] %> 원 <br>
+    종가: <%= @data["data"]["closing_price"] %> 원 <br>
+    저가: <%= @data["data"]["min_price"] %> 원 <br>
+    고가: <%= @data["data"]["max_price"] %> 원<br>
+    거래대금(일): <%= (@data["data"]["volume_1day"].to_i * @data["data"]["average_price"].to_i) / 100000000 %> 억 <br>
+<% end %>

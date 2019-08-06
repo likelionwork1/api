@@ -3,8 +3,8 @@ class HomesController < ApplicationController
   end
 
   def bithumb
-    currency = params[:currency]
-    url = "https://api.bithumb.com/public/ticker/#{currency}"
+    @currency = params[:currency]
+    url = "https://api.bithumb.com/public/ticker/#{@currency}"
     response = HTTParty.get(url)
     @data = response.parsed_response
 

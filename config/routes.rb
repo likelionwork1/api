@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'homes/index'
-  get 'homes/call'
+  get 'homes/bithumb'
   get 'homes/misae'
   root 'homes#index'
   

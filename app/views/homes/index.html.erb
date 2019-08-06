@@ -2,9 +2,10 @@
 <p>Find me in app/views/homes/index.html.erb</p>
 
 <span> 화폐이름을 입력하세요
-    <form action="/homes/call" method="get">
+    <form action="/homes/bithumb" method="get">
         화폐: <input type="text" name="currency">
         <input type="submit" value="제출">
+         | 빗썸 거래 가능 코인( ALL(전체), 기본값 BTC, ETH, EOS, XRP, LTC, ... )
     </form>
 </span>
 
@@ -12,8 +13,9 @@
 
 <span> 지역을 입력하세요
     <form action="/homes/misae" method="get">
-        지역: <input type="text" name="city">
+        지역: <input type="text" name="city"> 
         <input type="submit" value="제출">
+         | 시도 이름(서울, 부산, 대구, 인천, 광주, 대전, 울산, 경기, 강원, 충북, 충남, 전북, 전남, 경북, 경남, 제주, 세종)
     </form>
 </span>
 
