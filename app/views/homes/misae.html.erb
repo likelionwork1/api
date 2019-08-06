@@ -1,0 +1,12 @@
+<%= @data %>
+<hr>
+<% @data1.each do |gu| %>
+    구: <%= gu['cityName'] %> <br>
+    미세먼지평균농도: <%= gu['pm10Value'] %> <br>
+    초미세먼지평균농도: <%= gu['pm25Value'] %> <br>
+    상태: <%= check_status(gu['pm10Value'].to_i) %>
+    <hr>
+<% end %>
+<hr>
+<%= @data2 %>
+<hr>
